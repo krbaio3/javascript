@@ -5,11 +5,11 @@
   "license": "MIT",
   "description": "Javascript examples",
   "scripts": {
-    "clean": "rimraf ./dist",
-    "build": "tsc -p tsconfig.json",
-    "build:watch": "tsc -w -p tsconfig.json"
+    "start": "npm run copy && run-p transpile devserver",
+    "copy": "copyfiles --flat src/**/*.{html,css} dist",
+    "transpile": "tsc",
+    "devserver": "lite-server -c bs-config.json"
   },
-  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/krbaio3/javascript.git"
