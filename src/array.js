@@ -25,4 +25,10 @@ const last = (customArray) => customArray.pop();
 console.log(last(myArray));
 
 
+export const arrayTest = (myArray) => {
+    console.log(head(myArray));
+    console.log(tail(myArray));
+    console.log(init(myArray));
+    console.log(last(myArray));
+};
 export {head, last, tail, init};

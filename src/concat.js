@@ -3,7 +3,7 @@ const myArray2 = ['hola', 'mundo', 'cruel'];
 
 /* Concat */
 
-const concat = (arrayA, arrayB) => [...arrayA,...arrayB];
+export const concat = (arrayA, arrayB) => [...arrayA,...arrayB];
 
 console.log(concat(myArray1, myArray2));
 

@@ -30,4 +30,11 @@ const last = (...args) => args.forEach((item) => console.log(item.pop()));
 last(myArrayString, myArrayNumbers);
 
 
-export { head, last, tail, init };
+export const arrayV2Test = (myArrayNumbers, myArrayString) => {
+    head(myArrayNumbers, myArrayString);
+    tail(myArrayNumbers, myArrayString);
+    init(myArrayNumbers, myArrayString);
+    last(myArrayString, myArrayNumbers);
+};
+
+// export { head, last, tail, init };

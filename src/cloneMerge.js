@@ -13,4 +13,7 @@ const b = {name: "Luisa", age: 31, married: true};
 
 const merge = (target, source) => clone(target, source);
 
-console.log(merge(a,b));
+console.log(merge(a, b));
+
+
+export {clone, merge};

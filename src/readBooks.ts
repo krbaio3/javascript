@@ -3,8 +3,8 @@ export interface Book {
     isRead: boolean;
 }
 
-const isBookRead = (books: Book[], titleToSearch: String): boolean => {
+export const isBookRead = (books: Book[], titleToSearch: String): boolean => {
     return !!books.filter( (book: Book) => book.title === titleToSearch && book.isRead)
 };
 
-export {isBookRead};
+// export {isBookRead};
