@@ -19,7 +19,7 @@ describe('Array Spec', () => {
         const result = tail(myArray);
 
         // Asset
-        expect(result).toEqual([ 2, 3, 4, 5]);
+        expect(result).toEqual([2, 3, 4, 5]);
     });
     it('(INIT) should RETURN [133, 2, 3, 4] elements WHEN pass [133, 2, 3, 4, 5]', () => {
         // Arrange
@@ -29,7 +29,7 @@ describe('Array Spec', () => {
         const result = init(myArray);
 
         // Asset
-        expect(result).toEqual([ 133, 2, 3, 4]);
+        expect(result).toEqual([133, 2, 3, 4]);
     });
     it('(LAST) should RETURN "5" WHEN pass [133, 2, 3, 4, 5]', () => {
         // Arrange

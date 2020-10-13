@@ -1,9 +1,5 @@
-const myArray1 = [1,2,3,4,5];
-const myArray2 = ['hola', 'mundo', 'cruel'];
-
 /* Concat */
 
-export const concat = (arrayA, arrayB) => [...arrayA,...arrayB];
+export const concat = (arrayA, arrayB) => [...arrayA, ...arrayB];
 
-//console.log(concat(myArray1, myArray2));
-
+// console.log(concat(myArray1, myArray2));

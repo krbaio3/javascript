@@ -1,24 +1,20 @@
 export class SlothMachine {
-
     public count = 0;
 
-    constructor() {}
-
     public play(): string {
-        let a = !!Math.floor(Math.random() * 2);
-        let b = !!Math.floor(Math.random() * 2);
-        let c = !!Math.floor(Math.random() * 2);
+        const a = !!Math.floor(Math.random() * 2);
+        const b = !!Math.floor(Math.random() * 2);
+        const c = !!Math.floor(Math.random() * 2);
 
         this.count++;
 
         let cadena = '';
 
-        c && b && a ?
-            (cadena = `Congratulations!!!. You won ${this.count} coins!!`,  this.count = 0):
-            cadena = 'Good luck next time!!';
-        return cadena
+        c && b && a
+            ? ((cadena = `Congratulations!!!. You won ${this.count} coins!!`), (this.count = 0))
+            : (cadena = 'Good luck next time!!');
+        return cadena;
     }
-
 }
 //
 // const machine1 = new SlothMachine();

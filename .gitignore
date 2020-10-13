@@ -105,3 +105,7 @@ dist
 
 
 .idea/
+
+# locks
+yarn.lock
+package-lock.json

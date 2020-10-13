@@ -1,10 +1,7 @@
-// const myArrayNumbers = [7, 2, 3, 4, 5];
-// const myArrayString = ['hola', 'mundo', 'cruel'];
-
 /* Head */
 
 export const customHead: (...T) => Array<typeof T> = (...args) => {
-    let result: any[] = [];
+    const result: any[] = [];
     args.forEach(([st]) => result.push(st));
     return result;
 };
@@ -14,18 +11,17 @@ export const customHead: (...T) => Array<typeof T> = (...args) => {
 /* Tail */
 
 export const customTail: (...T) => Array<typeof T> = (...args) => {
-    let result: any[] = [];
-    args.forEach(([st, ...rest]) => result.push(rest));
+    const result: any[] = [];
+    args.forEach(([, ...rest]) => result.push(rest));
     return result;
 };
 
 // customTail(myArrayNumbers, myArrayString);
 
-
 /* Init */
 
 export const customInit: (...T) => Array<typeof T> = (...args) => {
-    let result: any[] = [];
+    const result: any[] = [];
     args.forEach((item) => result.push(item.slice(0, item.length - 1)));
     return result;
 };
@@ -35,17 +31,9 @@ export const customInit: (...T) => Array<typeof T> = (...args) => {
 /* Last */
 
 export const customLast: (...T) => Array<typeof T> = (...args) => {
-    let result: any[] = [];
-    args.forEach((item) => result.push(item.pop()))
+    const result: any[] = [];
+    args.forEach((item) => result.push(item.pop()));
     return result;
 };
 
 // customLast(myArrayString, myArrayNumbers);
-
-
-export const arrayTest = (arr1, arr2) => {
-    customHead(arr1, arr2);
-    customTail(arr1, arr2);
-    customInit(arr1, arr2);
-    customLast(arr2, arr1);
-};
