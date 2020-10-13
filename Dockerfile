@@ -1,12 +1,12 @@
 FROM node
 
-WORKDIR /usr/src/app
+WORKDIR /usr/src
 
 COPY package.json .
 
 RUN npm install
 
-ADD . /usr/src/app
+ADD . /usr/src
 
 CMD [ "npm", "start" ]
 

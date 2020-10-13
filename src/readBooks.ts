@@ -1,10 +1,7 @@
 export interface Book {
-    title: String;
+    title: string;
     isRead: boolean;
 }
 
-export const isBookRead = (books: Book[], titleToSearch: String): boolean => {
-    return !!books.filter( (book: Book) => book.title === titleToSearch && book.isRead)
-};
-
-// export {isBookRead};
+export const isBookRead = (books: Book[], titleToSearch: string): boolean => 
+    books.filter((book: Book) => ((book.title === titleToSearch) && book.isRead)).length>0 ? true : false;

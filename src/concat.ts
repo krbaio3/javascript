@@ -5,5 +5,5 @@ const myArray2 = ['hola', 'mundo', 'cruel'];
 
 export const concat = (arrayA, arrayB) => [...arrayA,...arrayB];
 
-console.log(concat(myArray1, myArray2));
+//console.log(concat(myArray1, myArray2));
 

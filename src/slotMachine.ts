@@ -4,7 +4,7 @@ export class SlothMachine {
 
     constructor() {}
 
-    public play(): String {
+    public play(): string {
         let a = !!Math.floor(Math.random() * 2);
         let b = !!Math.floor(Math.random() * 2);
         let c = !!Math.floor(Math.random() * 2);
@@ -22,8 +22,8 @@ export class SlothMachine {
 }
 //
 // const machine1 = new SlothMachine();
-// console.log(machine1.play()); // "Good luck next time!!"
-// console.log(machine1.play()); // "Good luck next time!!"
-// console.log(machine1.play()); // "Congratulations!!!. You won 3 coins!!"
-// console.log(machine1.play()); // "Good luck next time!!"
-// console.log(machine1.play()); // "Congratulations!!!. You won 2 coins!!"
+// //console.log(machine1.play()); // "Good luck next time!!"
+// //console.log(machine1.play()); // "Good luck next time!!"
+// //console.log(machine1.play()); // "Congratulations!!!. You won 3 coins!!"
+// //console.log(machine1.play()); // "Good luck next time!!"
+// //console.log(machine1.play()); // "Congratulations!!!. You won 2 coins!!"
