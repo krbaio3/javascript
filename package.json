@@ -27,11 +27,12 @@
     "lint:fix": "eslint -c .eslintrc.js --ext .ts ./src --fix",
     "prettier": "prettier --write .",
     "release": "standard-version",
-    "start": "run-p -l  type-check:watch && start:dev",
+    "start": "run-p -l type-check:watch && start:dev",
     "start:dev": "rimraf dist && parcel ./src/index.html --open",
     "test": "jest",
     "type-check": "tsc --noEmit",
-    "type-check:watch": "npm run type-check -- --watch"
+    "type-check:watch": "npm run type-check -- --watch",
+    "start:prod": "run-p -l build:prod && http-server dist"
   },
   "husky": {
     "hooks": {
@@ -50,6 +51,7 @@
     }
   },
   "dependencies": {
+    "http-server": "^0.12.3",
     "typescript": "^3.9.5"
   },
   "devDependencies": {
